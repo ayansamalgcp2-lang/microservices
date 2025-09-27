@@ -1,0 +1,7 @@
+project_id      = "my-gcp-project-prod"
+project_prefix  = "shop"
+region          = "us-central1"
+subnet_cidr_a   = "10.10.0.0/20"
+subnet_cidr_b   = "10.10.16.0/20"
+orders_image    = "us-docker.pkg.dev/my-gcp-project-prod/apps/orders:1.0.0"
+inventory_image = "us-docker.pkg.dev/my-gcp-project-prod/apps/inventory:1.0.0"

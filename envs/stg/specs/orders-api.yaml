@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: orders-api
+  version: 1.0.0
+paths:
+  /orders:
+    get:
+      x-google-backend:
+        # Replace with actual Cloud Run URL output after apply (orders_url)
+        address: https://orders-REPLACEME-uc.a.run.app
+        protocol: h2
+      security:
+        - api_key: []
+      responses:
+        '200': { description: OK }
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+x-google-allow: all
